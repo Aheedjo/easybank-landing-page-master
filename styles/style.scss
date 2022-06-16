@@ -136,8 +136,36 @@ body {
         }
         .hamburger {
             display: none;
+            cursor: pointer;
         }
     }
+    .mobile_menu {
+        position: absolute;
+        left: 50%;
+        top: 80px;
+        background-color: $White;
+        border-radius: 5px;
+        padding: 35px 0;
+        text-align: center;
+        width: 90%;
+        transform: translateX(-50%);
+        ul {
+            li {
+                margin-bottom: 30px;
+                a {
+                    color: $Dark_Blue;
+                    font-size: 1em;
+                }
+            }
+            li:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.show {
+    display: none;
 }
 
 #hero {
@@ -377,7 +405,7 @@ body {
                 margin-bottom: 100px;
                 img {
                     width: 100%;
-                    height: fit-content;
+                    // height: fit-content;
                     top: -230px;
                     left: 0px;
                 }

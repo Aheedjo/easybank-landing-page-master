@@ -140,6 +140,37 @@ body {
 
 #nav_bar .container .hamburger {
   display: none;
+  cursor: pointer;
+}
+
+#nav_bar .mobile_menu {
+  position: absolute;
+  left: 50%;
+  top: 80px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 35px 0;
+  text-align: center;
+  width: 90%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#nav_bar .mobile_menu ul li {
+  margin-bottom: 30px;
+}
+
+#nav_bar .mobile_menu ul li a {
+  color: #2d314d;
+  font-size: 1em;
+}
+
+#nav_bar .mobile_menu ul li:last-of-type {
+  margin-bottom: 0;
+}
+
+.show {
+  display: none;
 }
 
 #hero {
@@ -455,9 +486,6 @@ body {
   }
   #hero .container .image img {
     width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
     top: -230px;
     left: 0px;
   }
