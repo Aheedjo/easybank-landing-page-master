@@ -143,40 +143,47 @@ body {
 }
 
 #hero {
+  background-image: url("../images/bg-intro-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 600px -170px;
+  background-color: #fafafa;
+  z-index: -1;
+}
+
+#hero .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #fafafa;
-  background-image: url("../images/bg-intro-desktop.svg");
-  background-repeat: no-repeat;
-  background-position: 600px -170px;
-  padding: 187px 0 187px 130px;
-  z-index: -1;
+  padding: 187px 0;
 }
 
-#hero .text {
+#hero .container .text {
   width: 450px;
 }
 
-#hero p {
+#hero .container p {
   margin-top: 30px;
   margin-bottom: 40px;
 }
 
-#hero .image {
+#hero .container .image {
   position: relative;
 }
 
-#hero .image img {
+#hero .container .image img {
   position: absolute;
   top: -370px;
-  left: -640px;
+  left: -460px;
   z-index: 10;
 }
 
@@ -352,7 +359,6 @@ body {
     margin: auto;
   }
   #hero {
-    padding: 12rem 0 12rem 100px;
     background-position: 500px -170px;
   }
   #hero .image {
@@ -369,9 +375,6 @@ body {
 @media screen and (max-width: 1150px) {
   #nav_bar {
     padding: 20px 0;
-  }
-  #hero {
-    padding: 187px 0 187px 5%;
   }
   #hero .image img {
     top: -458px;
@@ -396,7 +399,7 @@ body {
     font-size: 0.78em;
   }
   p {
-    font-size: 0.78em;
+    font-size: 0.8em;
   }
   .small {
     font-size: 0.67em;
@@ -420,30 +423,83 @@ body {
     display: block;
   }
   #hero {
-    padding: 350px 0 80px 5%;
-    display: block;
     background-image: url("../images/bg-intro-mobile.svg");
-    background-position: 0px 0px;
+    background-position: top right;
+    background-size: contain;
+    text-align: center;
   }
-  #hero .text {
-    width: 450px;
+  #hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 80px;
   }
-  #hero p {
-    margin-top: 30px;
-    margin-bottom: 40px;
-  }
-  #hero .image {
+  #hero .container .text {
     width: 100%;
-    height: 100%;
-    position: relative;
   }
-  #hero .image img {
-    width: 90%;
-    margin: auto;
-    position: absolute;
-    top: -630px;
+  #hero .container p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  #hero .container .image {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 100px;
+  }
+  #hero .container .image img {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    top: -230px;
     left: 0px;
-    z-index: 10;
+  }
+  .why_chose_easybank {
+    text-align: center;
+  }
+  .footer {
+    padding: 40px 0;
+    text-align: center;
+  }
+  .footer .container {
+    display: block;
+  }
+  .footer .container > div {
+    display: block;
+  }
+  .footer .container > div .logo_social {
+    display: block;
+    gap: 60px;
+  }
+  .footer .container > div .logo_social .socials {
+    margin: 30px;
+  }
+  .footer .container > div .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0px;
+  }
+  .footer .container .button_copytight {
+    margin-top: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
