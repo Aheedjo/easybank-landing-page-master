@@ -390,7 +390,7 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            // gap: 200px;
+            gap: 700px;
             padding-bottom: 80px;
             .text {
                 width: 100%;
@@ -441,6 +441,54 @@ body {
                 align-items: center;
                 gap: 30px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #hero {
+        .container {
+            gap: 600px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #hero {
+        .container {
+            gap: 500px;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #hero {
+        .container {
+            gap: 400px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #hero {
+        .container {
+            gap: 300px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #hero {
+        .container {
+            gap: 200px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #hero {
+        .container {
+            gap: 0px;
         }
     }
 }

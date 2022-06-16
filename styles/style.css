@@ -470,6 +470,7 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    gap: 700px;
     padding-bottom: 80px;
   }
   #hero .container .text {
@@ -528,6 +529,42 @@ body {
         -ms-flex-align: center;
             align-items: center;
     gap: 30px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #hero .container {
+    gap: 600px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #hero .container {
+    gap: 500px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #hero .container {
+    gap: 400px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #hero .container {
+    gap: 300px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #hero .container {
+    gap: 200px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #hero .container {
+    gap: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
